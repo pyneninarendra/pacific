@@ -5,7 +5,10 @@ export class Flights extends Component {
         super(props)
     
         this.state = {
-             flights:[]
+             flights:[],
+             launchYear:'',
+             successLaunch: '',
+             successLanding:''
         }
     }
 
@@ -15,7 +18,6 @@ export class Flights extends Component {
             this.setState({
                 flights: response.data
             })
-            console.log(response.data);
         })
         .catch(error => {
             console.log(error);

@@ -1,14 +1,40 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Header from './Header'
-import MainContent from './MainContent'
+import Filter from './Filter'
+import Flights from './Flights'
+import Footer from './Footer'
 
-function Home() {
-    return (
-        <div className="mainContainer">
-            <Header />
-            <MainContent />
-        </div>
-    )
+class Home extends Component {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+            filterFlights:''
+        }
+    }
+    
+    filterFlights = (e) => {
+        e.preventDefault();
+        console.log(e.target.value)
+    }
+    
+    render() {
+        const developer='Narendra Kumar'
+        return (
+            <div className="mainContainer">            
+                <Header />
+                <main>
+                    <div className="sideNav">
+                        <Filter filterFlights={this.props.filterFlights} />
+                    </div>
+                    <div className="main">
+                        <Flights />
+                    </div>
+                </main>
+                <Footer developer={developer} />
+            </div>
+        )
+    }
 }
 
 export default Home

@@ -19,7 +19,7 @@ main{display:flex;justify-content:space-between;padding:0 1rem;}
 .sideNav .card .card{border: none}
 .sideNav .card .card-header{border-bottom: none;background-color: rgba(255, 255, 255,1);padding:.75rem 0rem}
 .sideNav .card .card-header h2{padding:.75rem 1.25rem;font-size: 1.8rem;font-weight: bold;}
-.sideNav .card .card-header span{display: inline-block;border-bottom:1px solid rgba(0,0,0,.125);padding: 0px 40px;font-size:1.3rem;}
+.sideNav .card .card-header span{display: inline-block;border-bottom:1px solid rgba(0,0,0,.125);padding: 0px 25px;font-size:1.6rem;}
 .sideNav .card.launchYear .card-body,
 .sideNav .card.successfulLaunch .card-body,
 .sideNav .card.successfulLanding .card-body{padding-top: 0;}
@@ -28,14 +28,13 @@ main{display:flex;justify-content:space-between;padding:0 1rem;}
 .sideNav .card.successfulLanding .card-body .landingWrapper{margin:0;padding: 0px;list-style-type: none;display: flex;flex-wrap: wrap;justify-content: space-between;}
 .sideNav .card.launchYear .card-body .launchYearWrapper .filterLaunchYear,
 .sideNav .card.successfulLaunch .card-body .launchWrapper .filterLaunch,
-.sideNav .card.successfulLanding .card-body .landingWrapper .filterLanding{width:35%;}
- .sideNav .card.launchYear .card-body .launchYearWrapper .filterLaunchYear a,
- .sideNav .card.successfulLaunch .card-body .launchWrapper .filterLaunch a,
- .sideNav .card.successfulLanding .card-body .landingWrapper .filterLanding a{margin:0px;margin-top:10px;background-color: #c5e09b;border-radius:5px;padding:8px 15px;text-decoration: none;display: inline-block;color: #121212 !important;}
- .sideNav .card.launchYear .card-body .launchYearWrapper .filterLaunchYear a:active,
- .sideNav .card.launchYear .card-body .launchYearWrapper .filterLaunchYear:first-child a,
- .sideNav .card.successfulLaunch .card-body .launchWrapper .filterLaunch a:active,
- .sideNav .card.successfulLanding .card-body .landingWrapper .filterLanding a:active{background-color: #7cba01;font-weight:bold;}
+.sideNav .card.successfulLanding .card-body .landingWrapper .filterLanding{width:35%;cursor: pointer;}
+ .sideNav .card.launchYear .card-body .launchYearWrapper .filterLaunchYear,
+ .sideNav .card.successfulLaunch .card-body .launchWrapper .filterLaunch,
+ .sideNav .card.successfulLanding .card-body .landingWrapper .filterLanding{margin:0px;margin-top:10px;background-color: #c5e09b;border-radius:5px;padding:8px 15px;text-decoration: none;display: inline-block;color: #121212 !important;}
+ .sideNav .card.launchYear .card-body .launchYearWrapper .filterLaunchYear.active,
+ .sideNav .card.successfulLaunch .card-body .launchWrapper .filterLaunch.active,
+ .sideNav .card.successfulLanding .card-body .landingWrapper .filterLanding.active{background-color: #7cba01;font-weight:bold;}
 footer span{display: inline-block;padding:25px 0px;}
 .flights{list-style-type: none;display: flex;align-items: center;margin: 0;padding: 0;flex-wrap: wrap;}
 .flights li{background-color: #fff;margin: 0px 10px 10px;border-radius: 10px;padding:15px;width:17.5em;}
