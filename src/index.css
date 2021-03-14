@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import './../node_modules/font-awesome/css/font-awesome.min.css';
+
+html{font-size:62%; box-sizing: border-box;}
+body{margin:0px;padding:0px;background-color:#efefef;}
+#root{height:100vh;}
+.App{height:100%;display: grid;}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{margin-bottom:0;}
+body,input, select, button, textarea{font-size:1.6rem;font-family: 'Arial', sans-serif;color:#121212;}
+.mainContainer{display: flex;flex-direction:column;height:100%;}
+header{display:flex;}
+header h1{padding:1rem 0 1rem 1rem;}
+main{display:flex;justify-content:space-between;padding:0 1rem;}
+.card{background:#fff;}
+.sideNav{flex: 0 0 auto;width:20%;}
+.main{flex:0 0 auto;width:80%}
+.main div{height:100%;}
+.bg-white{background-color: #fff;}
+.sideNav .card .card{border: none}
+.sideNav .card .card-header{border-bottom: none;background-color: rgba(255, 255, 255,1);padding:.75rem 0rem}
+.sideNav .card .card-header h2{padding:.75rem 1.25rem;font-size: 1.8rem;font-weight: bold;}
+.sideNav .card .card-header span{display: inline-block;border-bottom:1px solid rgba(0,0,0,.125);padding: 0px 40px;font-size:1.3rem;}
+.sideNav .card.launchYear .card-body,
+.sideNav .card.successfulLaunch .card-body,
+.sideNav .card.successfulLanding .card-body{padding-top: 0;}
+.sideNav .card.launchYear .card-body .launchYearWrapper,
+.sideNav .card.successfulLaunch .card-body .launchWrapper,
+.sideNav .card.successfulLanding .card-body .landingWrapper{margin:0;padding: 0px;list-style-type: none;display: flex;flex-wrap: wrap;justify-content: space-between;}
+.sideNav .card.launchYear .card-body .launchYearWrapper .filterLaunchYear,
+.sideNav .card.successfulLaunch .card-body .launchWrapper .filterLaunch,
+.sideNav .card.successfulLanding .card-body .landingWrapper .filterLanding{width:35%;}
+ .sideNav .card.launchYear .card-body .launchYearWrapper .filterLaunchYear a,
+ .sideNav .card.successfulLaunch .card-body .launchWrapper .filterLaunch a,
+ .sideNav .card.successfulLanding .card-body .landingWrapper .filterLanding a{margin:0px;margin-top:10px;background-color: #c5e09b;border-radius:5px;padding:8px 15px;text-decoration: none;display: inline-block;color: #121212 !important;}
+ .sideNav .card.launchYear .card-body .launchYearWrapper .filterLaunchYear a:active,
+ .sideNav .card.launchYear .card-body .launchYearWrapper .filterLaunchYear:first-child a,
+ .sideNav .card.successfulLaunch .card-body .launchWrapper .filterLaunch a:active,
+ .sideNav .card.successfulLanding .card-body .landingWrapper .filterLanding a:active{background-color: #7cba01;font-weight:bold;}
+footer span{display: inline-block;padding:25px 0px;}
+.flights{list-style-type: none;display: flex;align-items: center;margin: 0;padding: 0;flex-wrap: wrap;}
+.flights li{background-color: #fff;margin: 0px 10px 10px;border-radius: 10px;padding:15px;width:17.5em;}
+.flights li .flightImg img{background-color: #dedede;width:100%;}
+.flights li .captionWrapper{padding-top: 1rem;}
+.flights li .captionWrapper .missionName{font-weight:bold;color: darkblue;}
+.flights li .captionWrapper .missionName, 
+.flights li .captionWrapper .missionId, 
+.flights li .captionWrapper .launchYear,
+.flights li .captionWrapper .succLaunch,
+.flights li .captionWrapper .succLanding{font-size:1.6rem; text-align: left;}
+.flights li .captionWrapper .missionId,
+.flights li .captionWrapper .launchYear,
+.flights li .captionWrapper .succLaunch,
+.flights li .captionWrapper .succLanding{color: #121212;font-weight:bold;}
+.flights li .captionWrapper .missionId span,
+.flights li .captionWrapper .launchYear span,
+.flights li .captionWrapper .succLaunch span,
+.flights li .captionWrapper .succLanding span{color:#9096bb;font-weight: normal;}
+@media only screen and (max-width:768px){
+    .sideNav .card .card-header span{padding: 0px 15px;}
+    .sideNav{width:30%;}
+    .main{width:70%;}
+    .flights li{width: 15em;}
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media only screen and (max-width:700px){
+    .sideNav{width:35%;}
+    .main{width:65%;}
+    .flights li{width: 47%;margin:0px 5px 5px}
+}
+@media only screen and (max-width:600px){
+    main{flex-direction: column;}
+    .sideNav{width:100%;}
+    .main{width:100%;}
+    .sideNav .card .card-header span{padding: 0px 10px;}
+    .sideNav .card.launchYear .card-body .launchYearWrapper .filterLaunchYear{width:30%;}
+    .flights{padding-top: 15px;}
+    .flights li{width:11.5em;}
+}
+
+
+@media only screen and (max-width:600px){
+    .flights li{width:100%;}
 }
