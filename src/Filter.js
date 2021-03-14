@@ -13,22 +13,20 @@ function Filter(props) {
                         </div>
                         <div className='card-body'>
                             <ul className='launchYearWrapper'>
-                                <li className='filterLaunchYear'>2006</li>                                
-                                <li className='filterLaunchYear'>2008</li>                                
-                                <li className='filterLaunchYear'>2009</li>                                
-                                <li className='filterLaunchYear'>2010</li>                                
-                                <li className='filterLaunchYear'>2011</li>                                
-                                <li className='filterLaunchYear'>2012</li>                                
-                                <li className='filterLaunchYear'>2013</li>                                
-                                <li className='filterLaunchYear'>2014</li>                             
-                                <li className='filterLaunchYear'>2015</li>                             
-                                <li className='filterLaunchYear'>2016</li>                             
-                                <li className='filterLaunchYear'>2017</li>                             
-                                <li className='filterLaunchYear'>2018</li>                             
-                                <li className='filterLaunchYear'>2019</li>                             
-                                <li className='filterLaunchYear'>2020</li>                             
-                                <li className='filterLaunchYear'>2021</li>                             
-                                <li className='filterLaunchYear'>2007</li>
+                                <li className='filterLaunchYear' onClick={props.shareData} value='2006'>2006</li>                                
+                                <li className='filterLaunchYear' onClick={props.shareData} value='2007'>2007</li>                                
+                                <li className='filterLaunchYear' onClick={props.shareData} value='2008'>2008</li>                                
+                                <li className='filterLaunchYear' onClick={props.shareData} value='2009'>2009</li>                                
+                                <li className='filterLaunchYear' onClick={props.shareData} value='2010'>2010</li>                                
+                                <li className='filterLaunchYear' onClick={props.shareData} value='2012'>2012</li>                                
+                                <li className='filterLaunchYear' onClick={props.shareData} value='2013'>2013</li>                                
+                                <li className='filterLaunchYear' onClick={props.shareData} value='2014'>2014</li>                             
+                                <li className='filterLaunchYear' onClick={props.shareData} value='2015'>2015</li>                             
+                                <li className='filterLaunchYear' onClick={props.shareData} value='2016'>2016</li>                             
+                                <li className='filterLaunchYear' onClick={props.shareData} value='2017'>2017</li>                             
+                                <li className='filterLaunchYear' onClick={props.shareData} value='2018'>2018</li>                             
+                                <li className='filterLaunchYear' onClick={props.shareData} value='2019'>2019</li>                             
+                                <li className='filterLaunchYear' onClick={props.shareData} value='2020'>2020</li>  
                             </ul>
                         </div>
                     </div>
